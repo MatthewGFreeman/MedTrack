@@ -38,7 +38,7 @@ public class MedicineDao implements Dao<Medicine> {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return list;
     }
 
     @Override
