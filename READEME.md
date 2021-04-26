@@ -5,29 +5,29 @@ A web application to track medical injections by medicine, date, and location on
 ## User stories & Features
 
 ### Features
--[x] Agile User Stories
--[x] Java SE 8
--[x] Gradle
--[x] JDBC
--[x] PostgreSQL
--[x] JavaEE Servlet
--[x] HTML/CSS/JS
--[x] Fetch
--[x] JUnit
--[ ] log4j
--[ ] Jest
--[x] Docker
--[x] Bootstrap
--[x] Data Access Object
--[ ] SQL Normilization (3rd form)
--[ ]  CRUD
-    -[x] Create
-    -[x] Read
-    -[ ] Update
-    -[ ] Delete
--[x] Login
--[x] Database persistnace
--[x] Session management
+- [x] Agile User Stories
+- [x] Java SE 8
+- [x] Gradle
+- [x] JDBC
+- [x] PostgreSQL
+- [x] JavaEE Servlet
+- [x] HTML/CSS/JS
+- [x] Fetch
+- [x] JUnit
+- [ ] log4j
+- [ ] Jest
+- [x] Docker
+- [x] Bootstrap
+- [x] Data Access Object
+- [ ] SQL Normilization (3rd form)
+- [ ]  CRUD
+    - [x] Create
+    - [x] Read
+    - [ ] Update
+    - [ ] Delete
+- [x] Login
+- [x] Database persistnace
+- [x] Session management
 
 - A user...
     - [x] can login
