@@ -41,4 +41,13 @@ public class ViewRecordsApiServlet extends HttpServlet {
         return;
 
     }
+
+    // @Override
+    // protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    //     String notes = req.getParameter("notes");
+    //     String dateAndTime = req.getParameter("dateAndTime");
+    //     srDao.deleteOneRecord(notes, dateAndTime);
+    //     doGet(req, res);
+    //     // res.sendRedirect("viewrecords.html");
+    // }
 }

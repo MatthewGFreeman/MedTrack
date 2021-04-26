@@ -34,19 +34,33 @@
             <h1>Welcome</h1>
             <p>Your records are listed below.</p>
         </div>
-        <table id="viewRecordsTable" class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Medicine Name</th>
-                <th scope="col">Shot Location</th>
-                <th scope="col">Notes</th>
-                <th scope="col">Date and Time</th>
-              </tr>
-            </thead>
-            <tbody id="viewRecordsTableBody">
-            </tbody>
-          </table>
+          <table id="viewRecordsTable" class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Medicine Name</th>
+                  <th scope="col">Shot Location</th>
+                  <th scope="col">Notes</th>
+                  <th scope="col">Date and Time</th>
+                </tr>
+              </thead>
+              <tbody id="viewRecordsTableBody">
+              </tbody>
+            </table>
           <a href="newrecord.html" class="btn btn-success">New Record</a>
+          <!-- <div id="deleteRecordContainer" class="container col-4 mt-3 p-3 shadow rounded" style="background-color: #eeede7;">
+            <h3>Delete Record</h3>
+            <form class="px-4 py-3" action="api/viewrecords" method="DELETE">
+              <div class="mb-3">
+                <label for="exampleDropdownFormEmail1" class="form-label">Notes</label>
+                <input type="text" class="form-control" id="exampleDropdownFormEmail1" placeholder="notes" name="notes">
+              </div>
+              <div class="mb-3">
+                <label for="exampleDropdownFormPassword1" class="form-label">Date and Time</label>
+                <input type="text" class="form-control" id="exampleDropdownFormPassword1" placeholder="date & time" name="dateAndTime">
+              </div>
+              <input type="submit" class="btn btn-danger" value="Delete Record">
+            </form>
+          </div> -->
     </div>
     <script 
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"

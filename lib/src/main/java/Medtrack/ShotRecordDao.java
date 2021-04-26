@@ -63,6 +63,22 @@ public class ShotRecordDao implements Dao<ShotRecord> {
         return list;
     }
 
+    public Integer getShotRecordId(String dateAndTime, String notes) {
+        ShotRecord shotRecord = new ShotRecord(0, 0, 0, notes, dateAndTime);
+        try {
+            PreparedStatement pStatement = connection.prepareStatement("select * from ShotRecords where notes = (?) and dateAndTime = (?)");
+            pStatement.setString(1, notes);
+            pStatement.setString(2, dateAndTime);
+            ResultSet rSet = pStatement.executeQuery();
+            while(rSet.next()){
+                shotRecord.setUsId(rSet.getInt("srId"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return shotRecord.getSrId();
+    }
+
     public List<ShotRecord> getOneUsersRecords(String userName) {
         List<ShotRecord> list = new ArrayList<>();
         
@@ -91,6 +107,19 @@ public class ShotRecordDao implements Dao<ShotRecord> {
     public void delete(ShotRecord e) {
         // TODO Auto-generated method stub
         
+    }
+
+    public void deleteOneRecord(String notes, String dateAndTime) {
+        PreparedStatement pStatement;
+        try {
+            pStatement = connection.prepareStatement("Delete * from shotrecords where notes = ? and dateAndTime = ?");
+            pStatement.setString(1, notes);
+            pStatement.setString(2, dateAndTime);
+            pStatement.executeUpdate();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
     
 }
