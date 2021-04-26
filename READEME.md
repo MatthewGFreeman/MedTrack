@@ -4,7 +4,7 @@ A web application to track medical injections by medicine, date, and location on
 
 ## User stories & Features
 
-###Features
+### Features
 -[x] Agile User Stories
 -[x] Java SE 8
 -[x] Gradle
