@@ -1,4 +1,4 @@
-# Medical Shot Tracker
+# MedTrack
 
 A web application where users can track medical injections by medicine, date, and location on the body the shot was given.
 
